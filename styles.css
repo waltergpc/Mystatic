@@ -1,0 +1,154 @@
+
+header {
+    background-color: rgba(29, 33, 46, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+}
+
+h2 {
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: rgba(2, 10, 31, 0.7);
+    top: 0em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: beige;
+    position: sticky;
+    top: 1em;
+    
+    }
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+footer {
+
+    background-color:darkslategrey;
+    color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.Nav-item {
+    height: 50%;
+    width: 90%;
+    margin: 5em;
+    gap: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    font-family: monospace;
+   
+   
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+
+ 
+a {
+    color: beige;
+}
+
+a:hover {
+    background-color:goldenrod;
+}
+
+
+.About {
+    text-align:justify;
+    border: 10px, solid, black;
+    border-radius: 10%;
+    border: solid;
+    padding: 2em;
+    box-shadow: 0.7em 0.7em rgb(42, 51, 52), -0.7em 0.4em olive;
+}
+
+.Coding {
+    border: solid;
+    border-radius: 10%;
+    padding: 2em;
+    box-shadow: 2em -1em 1em rgb(24, 42, 44);
+}
+
+.other-skills {
+ grid-column-start: 1;
+ grid-column-end: 3;
+ grid-row-start: 2;
+ text-align: center;
+ border: solid; 
+ border-radius: 10%;
+ box-shadow: 2em -1em 1em rgb(34, 46, 33);
+}
+
+.myself {
+    height: 70%;
+    width: 80%; 
+    border-radius: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.hobby {
+    height: 70%;
+    width: 80%;
+    border-radius: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.school-img {
+    height: 30%;
+    width: 30%;
+}
+
+.language {
+
+    height: 50%;
+    width: 30%;
+
+}
+
+.repo {
+
+    height: 30%;
+    width: 30%;
+    
+}
+
+
+
+.myself {
+    max-width: 100%;
+    height: auto;
+}
+
+.hobby {
+    max-width: 100%;
+    height: auto;
+}
