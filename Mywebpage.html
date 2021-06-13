@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel= "stylesheet" href= "styles.css">
+    <link rel= "stylesheet" href= "css/all.css">
+    <link rel= "stylesheet" href= "styles-dark.css" id="dark-theme">
+    <link rel= "stylesheet" href= "styles.css" id="mode-link">
+    
 </head>
-<body>
+<body id="body">
     <header> 
         <h1>Walter Gonzalez Plata Cortes: My static site!</h1>
-    <nav class = "nav"> 
+        <div class= "drop-down">Walter's Static Site!   <i onclick="change_display()" class="fas fa-biking" id= "dropdown"></i> 
+        </div> 
+    <nav class = "nav" id= "nav" style= "display: none;"> 
         <ul> <a href= "#first"> About me </a> </ul>
         <ul> <a href= "#second"> My coding skills </a></ul>
         <ul> <a href= "#Contact"> Take a look at my work </a></ul>
         <ul><a href = "#footer"> Contact Information</a></ul>
+        <p  class= "Dark-mode" id= "Dark-mode"> Dark Mode </p>
     </nav>
+     
 </header>
-<main> 
+<main id="main"> 
     <h2 id= "first"> About Me</h2>
     <div class="Nav-item" id= "About me"> 
         <div class= "About"> 
@@ -74,6 +81,6 @@
     <p>Twitter: ****</p>
     </div>
 </footer>
-
+<script src= "script_mypage.js"></script>
 </body>
 </html>

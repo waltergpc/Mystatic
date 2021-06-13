@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 
@@ -38,19 +38,16 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background: rgba(2, 10, 31, 0.7);
+    background: teal;
+    top: 0em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: beige;
     position: sticky;
-    
+    top: 1em;
     
     }
 
     .drop-down {
-        display: none;
-    }
-
-    .drop-menu {
         display: none;
     }
 
@@ -63,11 +60,10 @@ main {
 
 
 footer {
- 
+
     background-color:darkslategrey;
     color: whitesmoke;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .Nav-item {
@@ -153,6 +149,7 @@ a:hover {
     box-shadow: 0 0 0.5em 0.5em var(--neon-color);
     opacity: 0;
     transition: opacity 100ms linear;
+    
 
 }
 
@@ -173,7 +170,7 @@ a:hover {
     border: solid;
     border-radius: 10%;
     padding: 2em;
-    box-shadow: 2em -1em 1em rgb(24, 42, 44);
+    box-shadow: 2em -1em 1em var(--neon-color);
 }
 
 .other-skills {
@@ -183,7 +180,7 @@ a:hover {
  text-align: center;
  border: solid; 
  border-radius: 10%;
- box-shadow: 2em -1em 1em rgb(34, 46, 33);
+ box-shadow: 2em -1em 1em var(--neon-color);
 }
 
 .myself {
@@ -203,13 +200,13 @@ a:hover {
 }
 
 .school-img {
-    height: auto;
+    height: 30%;
     width: 30%;
 }
 
 .language {
 
-    height: auto;
+    height: 50%;
     width: 30%;
 
 }
@@ -245,20 +242,15 @@ a:hover {
     }
 
     .nav {
-        
-        display: none;
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;;
     }
-    
 
     .drop-down {
         display: block;
-        align-items: center;
-        justify-content: center;
         font-size: 1.5rem;
-        background-color: rgba(2, 10, 31, 0.7); 
+        background-color: teal; 
         color: beige;
         height: auto;
         font-family: 'Courier New', Courier, monospace;
@@ -266,29 +258,21 @@ a:hover {
         font-weight: bold;
     } 
 
-    footer {
-        font-size: 0.8rem;
-    }
-
     .fas {
         cursor: pointer; 
     }
+}
 
-    
-
+@media (min-width: 801px) {
+    .nav {
+        display:flex !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background: teal;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: beige;
+        position: sticky;
+        
     }
-
-
-    @media (min-width: 801px) {
-        .nav {
-            display:flex !important;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            background: rgba(2, 10, 31, 0.7);
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            color: beige;
-            position: sticky;
-            
-        }
-    }
+}
