@@ -2,29 +2,18 @@ console.log("hola mundo");
 
 const Dark_button= document.querySelector("#Dark-mode");
 
-const Mode= document.querySelector("#mode-link");
+const Mode= document.querySelector("#body");
 
 Dark_button.addEventListener("click", function() {
-    if(Mode.getAttribute("href") == "styles.css") {
-        Mode.href = "styles-dark.css"
+    if(Mode.className == "body-light") {
+        Mode.className = "body-dark"
     } else {
-        Mode.href = "styles.css"
+        Mode.className = "body-light"
     };
 });
 
 const Drop= document.querySelector("#dropdown");
 
-
-
-
-
-function change_display() {
-    const Menu= document.getElementById("nav");
-    if(Menu.style.display == "none") {
-        Menu.style.display = "flex"
-    } else {
-        Menu.style.display = "none"
-    } }
 
 
 

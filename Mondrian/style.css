@@ -1,0 +1,139 @@
+
+body {
+    display: grid;
+    grid-template-columns: repeat(20 ,3em);
+    grid-template-rows: repeat(18 ,3em);
+    grid-gap: 0.6em;
+    background-color: black;
+    margin-left: 80px;
+}
+
+.greyfrow {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: rgb(88, 97, 114);
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.whitefrow {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    background-color: white;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+} 
+
+.yellowfrow {
+    grid-column-start: 13;
+    grid-column-end: 19;
+    background-color: gold;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.greylargefrow {
+    grid-column-start: 19;
+    grid-column-end: 21;
+    grid-row-start: 1;
+    grid-row-end: 14;
+    background-color: beige;
+}
+
+.beigesrow {
+    grid-column: 1 / 3;
+    grid-row: 3 / 7;
+    background-color: beige;
+}
+
+.redsrow {
+    grid-column: 3 / 13;
+    grid-row: 3 / 12;
+    background-color: red;
+
+}
+
+.yellowsrow {
+    grid-column: 13 / 19;
+    grid-row: 3 / 8;
+    background-color: gold;
+}
+
+.greytrow {
+    grid-column: 1 / 3;
+    grid-row: 7 / 14;
+    background-color: rgb(88, 97, 114);
+}
+
+.beigeonetrow {
+    grid-column: 13 / 16;
+    grid-row: 8 / 12;
+    background-color: beige;
+}
+
+.beigetwotrow {
+    grid-column: 16 / 19;
+    grid-row: 8 / 12;
+    background-color: beige;
+}
+
+.blackforow {
+    background-color: black;
+    grid-column: 3 / 8;
+    grid-row: 12 / 16;
+}
+
+.greyforow {
+    background-color: rgb(88, 97, 114);
+    grid-column: 8 / 13;
+    grid-row: 12 / 14;
+}
+
+.beigeforow {
+    background-color: beige;
+    grid-column: 13 / 19;
+    grid-row: 12/ 14;
+}
+
+.goldcorner {
+    background-color: gold;
+    grid-column: 1 / 3; 
+    grid-row: 14 / 19; 
+}
+
+.greyfirow {
+    background-color: rgb(88, 97, 114);
+    grid-column: 8 / 13;
+    grid-row: 14 / 16; 
+}
+
+.bluefirow {
+    background-color: rgb(8, 38, 92);
+    grid-column: 13 / 19;
+    grid-row: 14 / 18;
+}
+
+.redcorner {
+    background-color: red;
+    grid-column: 19 / 21;
+    grid-row: 14 / 19;
+}
+
+.beigeslast {
+    background-color: beige;
+    grid-column: 3 / 8;
+    grid-row: 16 / 19;
+}
+
+.beigellast {
+    background-color: beige;
+    grid-column: 8 / 19; 
+    grid-row: 18 / 19;
+}
+
+.blacklast {
+    background-color: black;
+    grid-column: 8 / 13;
+    grid-row: 16 / 18;
+}
