@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WGPlata</title>
+    <link rel= "stylesheet" href= "css/all.css">
+    <link rel= "stylesheet" href= "styles.css" id="mode-link">
+</head>
+
+<body class='body' id="body">
+    <header> 
+        <div class='head-block'>
+            <h1>Walter G-Plata</h1>
+            <div class= "drop-down">
+                <div>Walter G Plata</div>   
+                <div>
+                    <label for='check-drop' class='drop-label'>
+                    <i class="fas fa-biking" id= "dropdown"></i>
+                    </label> 
+                </div>    
+            </div>
+            <input type='checkbox' class='check-drop' id='check-drop'>
+            <nav class = "nav" id= "nav" > 
+                <ul class='nav-list'>
+                <li class='list-element'> <a href= "home.html"> Home </a> </li>
+                <li class='list-element'> <a href= "techstack.html"> Tech Stack </a> </li>
+                <li class='list-element'> <a href= "Portfolio.html"> Portfolio </a></li>
+                <li class='list-element'> <a href= "about.html"> About Me </a></li>
+                <li class='list-element'><a href = "#footer"> Contact Information</a></li>
+                </ul>   
+            </nav>  
+        </div>   
+</header>
+<main>
+    <section class='projects-container'>
+
+        <article class='project'>
+            <img src='./inventory-app.png ' class='project-image' />
+            <div class='project-info'>
+            <h3 class='project-title'>Inventory App</h3>
+            <h5 class='short-desc'>React/MERN Project</h5>
+            <div class='intro'>Developed in React, API in Node/Express, implements JWT authentication services and product fetching by category.
+                
+            </div>
+            <button type='button' class='span-btn' id='description-button'>Full Description</button>
+            
+            <div class='description' id='full-description'>
+                <p>This MERN app was created using React and react router v6, it sets and inventory for an office environment and
+                    list them as general supplies and personal supplies. the front-end was developed using React context API for state management.
+                The api was developed with express where authentication with JWT is implemnented and then routes are provided for the app to get
+            the items for each user, it is lnked to a Mongo database where the users and items are stored. </p>
+            </div>
+        </div>
+        <hr />
+        <div class='sources'>
+            <span class='source-item'><a href='https://silver-inventory.netlify.app'>Website</a></span>
+            <span class='source-item'><a>Front-end Repo</a></span>
+            <span class='source-item'><a>Back-end Repo</a></span>
+        </div>
+
+
+        </article>
+        <article class='project'>
+            <img src='./Bike-shop-app.png' class='project-image' />
+            <div class='project-info'>
+            <h3 class='project-title'>Bike Terrain Shop</h3>
+            <h5 class='short-desc'>React/MERN Project</h5>
+            <div class='intro'>Developed in React, API in Node/Express, Auth0 authentication, Stripe Payments, filtering products functionality.
+                
+            </div>
+            <button type='button'  class='span-btn' id='description-button'>Full Description</button>
+            
+            <div class='description' id='full-description'>
+                <p>MERN app where a fictional bike store is shown. This app was developed with React and react router v6,
+                    also it implements some netlify serverless functions in order to set payments with stripe. Authentication services
+                are implemented through Auth0. Product list and filtering is made throught context APIs.
+                API was developed with Node and express, where a simple API was implemented to supply the stock and specs
+                for each bike, cart functionality connot exceed the numbers of the stock supplied by the API.
+             </p>
+            </div>
+            </div>
+            <hr />
+        <div class='sources'>
+            <div><span>Repository</span> <i class='fab fa-github'></i></div>
+            <span><a>Website</a></span>
+        </div>
+        </article>
+        <article class='project'>
+            <h3>Cryptocurrency tracker</h3>
+            <ul class='tech-used'>
+                <li class='tech-item'>React</li>
+            </ul>
+            <div class='description'>
+                <p>App developed with React, react router v5 and some of d3. This app will use Coingecko's API to provided
+                    cryptocurrency price and stats in the central page. For each single coin, d3 was implemented to track 
+                    price during the last 3 months.
+            </div>
+        </article>
+
+
+
+    </section>
+
+   
+</main>
+<footer id="footer">
+    <h2 id= "info"> Contact Information </h2>
+    <br>
+    <div class ="contact-info">
+        <p><a href='https://github.com/waltergpc'><i class="fab fa-github"></a></i></p>
+        <p><a href='https://www.linkedin.com/in/plata-wg'><i class="fab fa-linkedin"></a></i></p>
+        <p><a href='https://twitter.com/plata_g'><i class="fab fa-twitter"></a></i></p>
+    </div>
+</footer>
+<script src= "portfolio-script.js"></script>
+</body>
+</html>

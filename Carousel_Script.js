@@ -6,7 +6,11 @@ const navDots = document.querySelector(".carousel-nav")
 const dots = Array.from(navDots.children)
 console.log(navDots)
 
-const slideWidth = slides[0].getBoundingClientRect().width
+let slideWidth = slides[0].getBoundingClientRect().width
+
+const getSlideWidth = () => {
+  return slides[0].getBoundingClientRect().width
+}
 
 const setSlidePosition = (slide, index) => {
   slide.style.left = slideWidth * index + "px"
@@ -77,5 +81,3 @@ navDots.addEventListener("click", (e) => {
 
   hideArrow(targetIndex)
 })
-
-console.log(slideWidth)
