@@ -1,11 +1,15 @@
 console.log('hola mundo')
 
+const theme = localStorage.getItem('theme')
 const Dark_button = document.querySelector('#Dark-mode')
-
 const Mode = document.querySelector('#body')
 const headBlock = document.querySelector('.head-block')
 const codeDiv = document.querySelectorAll('#codediv')
 const nav = document.querySelector('.nav')
+
+if (theme) {
+  Mode.className = theme
+}
 
 Dark_button.addEventListener('click', function () {
   if (Mode.className == 'body-light') {
@@ -16,6 +20,7 @@ Dark_button.addEventListener('click', function () {
       el.classList.add('dark')
       el.classList.remove('light')
     })
+    localStorage.setItem('theme', Mode.className)
   } else {
     Mode.className = 'body-light'
     headBlock.classList.remove('dark_head')
@@ -24,6 +29,7 @@ Dark_button.addEventListener('click', function () {
       el.classList.add('light')
       el.classList.remove('dark')
     })
+    localStorage.setItem('theme', Mode.className)
   }
 })
 
