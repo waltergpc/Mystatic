@@ -218,7 +218,7 @@ nav > ul > li > a {
 .carousel-container {
   position: relative;
   height: 60vh;
-  width: 60%;
+  width: 70vh;
   margin: 0 auto;
   margin-bottom: 3em;
 }
@@ -537,14 +537,15 @@ main {
 }
 .description {
   font-size: 0.8rem;
+  transform: scale(1, 0);
   transition: all 0.2s linear;
-  visibility: hidden;
+
   display: none;
 }
 
 .visible-desc {
-  visibility: visible;
   display: block;
+  transform: scale(1, 1);
   transition: all 0.2s linear;
 }
 
@@ -564,9 +565,13 @@ main {
   border-radius: 10%;
   font-weight: bold;
 }
+
+.source-item > a:link {
+  text-decoration: none;
+}
 /*-----------------------------------------------Media Queries Mobiles-----------------*/
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   h1 {
     display: none;
     margin: 0;
