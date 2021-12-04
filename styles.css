@@ -10,7 +10,7 @@
 }
 
 .body-light {
-  background-image: url('layered-peaks-haikei.svg');
+  background-image: url('bg-images/layered-peaks-haikei.svg');
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
@@ -18,7 +18,7 @@
 }
 
 .body-dark {
-  background-image: url('layered-peaks-haikei-dark-mode.svg');
+  background-image: url('bg-images/layered-peaks-haikei-dark-mode.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
@@ -388,10 +388,12 @@ main {
 
 .light {
   box-shadow: 2em -1em 1em rgb(24, 42, 44);
+  background-color: rgba(251, 251, 253, 0.3);
 }
 
 .dark {
   box-shadow: 2em -1em 1em hsla(69, 98%, 47%, 0.966);
+  background-color: rgba(29, 29, 29, 0.8);
 }
 
 .front-end-icons {
@@ -448,7 +450,7 @@ main {
 .myself {
   height: 70%;
   width: 70%;
-  border-radius: 15%;
+  border-radius: 7rem;
   padding-left: 10%;
   padding-right: 10%;
   max-width: 70%;
@@ -457,7 +459,7 @@ main {
 .hobby {
   height: 70%;
   width: 80%;
-  border-radius: 15%;
+  border-radius: 7rem;
   padding-left: 10%;
   padding-right: 10%;
   max-width: 100%;
@@ -662,6 +664,22 @@ main {
     font-family: monospace;
   }
 
+  .Coding {
+    font-size: 0.7rem;
+  }
+
+  .front-end-icons {
+    font-size: 3rem;
+  }
+
+  .back-end-icons {
+    font-size: 3rem;
+  }
+
+  .other-skill-icons {
+    font-size: 3rem;
+  }
+
   .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -680,9 +698,53 @@ main {
 }
 
 @media (max-width: 500px) {
+  .Dark-mode {
+    text-align: center;
+  }
+
+  .introduction {
+    font-size: 0.9rem;
+  }
+  .carousel-container {
+    width: 50vh;
+  }
+
   .projects-container {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0.5em;
+  }
+
+  .flex-item {
+    margin: 0.5em;
+  }
+
+  .Coding {
+    margin: 2em 0.1em;
+  }
+
+  .Coding > ul {
+    list-style: none;
+    padding-left: 0.5em;
+  }
+
+  .front-end-icons {
+    font-size: 2rem;
+  }
+
+  .back-end-icons {
+    font-size: 2rem;
+  }
+
+  .other-skill-icons {
+    font-size: 2rem;
+  }
+
+  .source-item {
+    font-size: 0.7rem;
+  }
+
+  .Nav-item {
+    margin: 3em 0.3em;
   }
 }
