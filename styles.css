@@ -243,6 +243,7 @@ nav > ul > li > a {
   position: absolute;
   top: 0;
   bottom: 0;
+  height: 100%;
   width: 100%;
 }
 
@@ -593,6 +594,7 @@ main {
   .drop-label {
     display: flex;
     align-items: center;
+    padding-right: 0.5rem;
   }
 
   .nav {
