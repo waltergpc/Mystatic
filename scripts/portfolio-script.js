@@ -54,6 +54,19 @@ const projects = [
       'Front-end Repo': 'https://github.com/DPLATA/crypto_tracker',
     },
   },
+  {
+    title: 'Rick And Morty App',
+    img: './images/rick-and-morty.png',
+    intro:
+      "React app with Rick and Morty's API, check out your favorite characters, locations and episodes, search and filter based on diferent parameters, Also see individual details.",
+    short_description: 'React Project',
+    description:
+      'This React App implements a front-end app for rick and morty public API, It implements routes through V6 and styling through styled components. The app intends to make use of greatly reusable components for all views making them as generic as possible. Implements basic testing through React testing library.',
+    sources: {
+      Website: 'https://getschwiftyapp.netlify.app',
+      'Front-end Repo': 'https://github.com/waltergpc/Rick_and_Morty_app',
+    },
+  },
 ]
 
 const container = document.querySelector('#projects-container')
