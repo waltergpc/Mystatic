@@ -1,4 +1,4 @@
-export const projects = [
+const projects1 = [
   {
     title: 'ScarabIO Bug Tracker',
     intro:
@@ -44,3 +44,5 @@ export const projects = [
     back_repo: '',
   },
 ]
+
+module.exports = projects1
